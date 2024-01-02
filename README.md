@@ -38,17 +38,60 @@ If the output is 1, then the led glows.
 Program:
 /*
 Program to design a half adder and full adder circuit and verify its truth table in quartus using Verilog programming.
-Developed by: 
-RegisterNumber:  
+Developed by: S.Sanjay Balaji
+RegisterNumber:  23005804
 */
-Logic symbol & Truthtable
-RTL realization
+```
+HALF ADDER:
 
-### Output:
-### RTL
-### TIMING DIAGRAM
+module halfadder(a,b,c,s);
+input a,b;
+output s,c;
+xor(s,a,b);
+and(c,a,b);
+endmodule
 
+FULL ADDER:
+
+module fulladd(a,b,ci,s,Co);
+input a,b,ci;
+output s,co;
+wire d,e,f;
+xor(d,a,b);
+xor(s,d,ci);
+and(e,ci,d);
+and(f,a,b);
+or(co,e,f);
+endmodule
+```
+
+### Logic Symbol:
+## HALF ADDER:
+![image](https://github.com/SanjayBalaji0/Exp-02-Implementation-of-Half-Adder-and-Full-Adder-circuit/assets/145533553/b204bdcb-024f-47bd-a80b-12e1a1ca33ad)
+
+## FULL ADDER:
+![image](https://github.com/SanjayBalaji0/Exp-02-Implementation-of-Half-Adder-and-Full-Adder-circuit/assets/145533553/ebaf373f-84e6-4776-930c-76be65a3c17b)
 
 ### TRUTH TABLE 
+## HALF ADDER:
+![image](https://github.com/SanjayBalaji0/Exp-02-Implementation-of-Half-Adder-and-Full-Adder-circuit/assets/145533553/aedd9a7d-1c29-4a5a-9693-ef4c90990056)
+
+## FULL ADDER:
+![image](https://github.com/SanjayBalaji0/Exp-02-Implementation-of-Half-Adder-and-Full-Adder-circuit/assets/145533553/e39a63ed-4e99-4c8d-acdc-4a5d0346631f)
+
+### RTL:
+## HALF ADDER:
+![image](https://github.com/SanjayBalaji0/Exp-02-Implementation-of-Half-Adder-and-Full-Adder-circuit/assets/145533553/3c591e53-729b-4671-b75c-cb43b3f51a01)
+
+## FULL ADDER:
+![image](https://github.com/SanjayBalaji0/Exp-02-Implementation-of-Half-Adder-and-Full-Adder-circuit/assets/145533553/7e418470-4d45-4185-86d7-defb882e7398)
+
+### WAVEFORM:
+## HALF ADDER:
+![image](https://github.com/SanjayBalaji0/Exp-02-Implementation-of-Half-Adder-and-Full-Adder-circuit/assets/145533553/1d1e5218-eae8-45ac-8acd-a99612bb7439)
+
+## FULL ADDER:
+![image](https://github.com/SanjayBalaji0/Exp-02-Implementation-of-Half-Adder-and-Full-Adder-circuit/assets/145533553/1b743664-ba97-4408-9b72-4a26507af1e6)
 
 ### Result:
+Thus the half adder and full adder are studied and the truth table for different logic gates are verified.
